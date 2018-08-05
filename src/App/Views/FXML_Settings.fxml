@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXSlider?>
+<?import com.jfoenix.controls.JFXToggleButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="525.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="App.Controller.SettingsController">
+   <children>
+      <VBox prefHeight="525.0" prefWidth="600.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox prefHeight="120.0" prefWidth="600.0" style="-fx-background-color: #00B0FF;">
+               <children>
+                  <FontAwesomeIconView fill="WHITE" glyphName="COG" size="4em">
+                     <HBox.margin>
+                        <Insets left="30.0" top="20.0" />
+                     </HBox.margin>
+                  </FontAwesomeIconView>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Cài đặt">
+                     <font>
+                        <Font name="Segoe UI Bold" size="24.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="15.0" top="20.0" />
+                     </HBox.margin>
+                  </Text>
+               </children>
+            </HBox>
+            <HBox prefHeight="62.0" prefWidth="600.0" style="-fx-background-color: white;">
+               <children>
+                  <VBox prefHeight="100.0" prefWidth="638.0">
+                     <children>
+                        <Label prefHeight="19.0" prefWidth="243.0" text="KHỞI ĐỘNG CÙNG HỆ THỐNG">
+                           <font>
+                              <Font name="Segoe UI Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Tự động chạy khi khởi động hệ thống." wrappingWidth="191.837890625">
+                           <VBox.margin>
+                              <Insets top="5.0" />
+                           </VBox.margin>
+                        </Text>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </VBox>
+                  <HBox prefHeight="48.0" prefWidth="600.0">
+                     <children>
+                        <JFXToggleButton prefHeight="56.0" prefWidth="295.0" />
+                     </children>
+                  </HBox>
+               </children>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="62.0" prefWidth="600.0" style="-fx-background-color: white;">
+               <children>
+                  <VBox prefHeight="100.0" prefWidth="638.0">
+                     <children>
+                        <Label prefHeight="19.0" prefWidth="204.0" text="THÔNG BÁO">
+                           <font>
+                              <Font name="Segoe UI Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Thông báo khi có tin nhắn đến" wrappingWidth="191.837890625">
+                           <VBox.margin>
+                              <Insets top="5.0" />
+                           </VBox.margin>
+                        </Text>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </VBox>
+                  <HBox prefHeight="48.0" prefWidth="600.0">
+                     <children>
+                        <JFXToggleButton prefHeight="56.0" prefWidth="295.0" />
+                     </children>
+                  </HBox>
+               </children>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="62.0" prefWidth="600.0" style="-fx-background-color: white;">
+               <children>
+                  <VBox prefHeight="100.0" prefWidth="638.0">
+                     <children>
+                        <Label prefHeight="19.0" prefWidth="204.0" text="NHẮC NHỞ KIỂM TRA">
+                           <font>
+                              <Font name="Segoe UI Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Hệ thống tự động nhắc nhở kiểm tra sức khoẻ hằng ngày cho người sử dụng" wrappingWidth="191.837890625">
+                           <VBox.margin>
+                              <Insets top="5.0" />
+                           </VBox.margin>
+                        </Text>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </VBox>
+                  <HBox prefHeight="48.0" prefWidth="600.0">
+                     <children>
+                        <JFXToggleButton prefHeight="56.0" prefWidth="295.0" />
+                     </children>
+                  </HBox>
+               </children>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="62.0" prefWidth="600.0" style="-fx-background-color: white;">
+               <children>
+                  <VBox prefHeight="62.0" prefWidth="509.0">
+                     <children>
+                        <Label prefHeight="19.0" prefWidth="262.0" text="ĐỘ TRONG SUỐT CỦA GIAO DIỆN">
+                           <font>
+                              <Font name="Segoe UI Bold" size="15.0" />
+                           </font>
+                        </Label>
+                        <JFXSlider>
+                           <VBox.margin>
+                              <Insets top="20.0" />
+                           </VBox.margin>
+                        </JFXSlider>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </VBox>
+               </children>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="70.0" prefWidth="600.0" style="-fx-background-color: #90A4AE;">
+               <children>
+                  <JFXButton onMouseClicked="#SaveChange" prefHeight="46.0" prefWidth="175.0" style="-fx-background-color: #00E676;" text="LƯU" textFill="WHITE">
+                     <padding>
+                        <Insets bottom="5.0" right="5.0" top="5.0" />
+                     </padding>
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Segoe UI Bold" size="20.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton onMouseClicked="#Cancel" prefHeight="46.0" prefWidth="175.0" style="-fx-background-color: gray;" text="THOÁT" textFill="WHITE">
+                     <padding>
+                        <Insets bottom="5.0" right="5.0" top="5.0" />
+                     </padding>
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Segoe UI Bold" size="20.0" />
+                     </font>
+                  </JFXButton>
+               </children>
+               <VBox.margin>
+                  <Insets top="30.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

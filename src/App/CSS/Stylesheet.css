@@ -1,0 +1,13 @@
+#iconsTitlebar{
+    -fx-background-color:#f44336;
+}
+#anchorPane{
+    -fx-background-color: white;
+}
+#btns{
+    -fx-background-radius: 20px;
+}
+
+#paneSignUp{
+    -fx-background-color: linear-gradient(to right top,#00E676,#5E35B1,#FF5722);
+}

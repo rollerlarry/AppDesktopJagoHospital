@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="anchorPane" onMouseDragged="#DraggedWindow" onMousePressed="#PressedWindow" prefHeight="650.0" prefWidth="1100.0" stylesheets="@../CSS/Stylesheet.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="App.Controller.IndexController">
+   <children>
+      <ImageView fitHeight="193.0" fitWidth="933.0" layoutY="457.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/bottom.PNG" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="338.0" fitWidth="742.0" layoutX="407.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/top.PNG" />
+         </image>
+      </ImageView>
+      <HBox prefHeight="116.0" prefWidth="1149.0">
+         <children>
+            <HBox prefHeight="97.0" prefWidth="1152.0">
+               <children>
+                  <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity">
+                     <children>
+                        <ImageView fitHeight="127.0" fitWidth="136.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/Health-Sign_icon.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </HBox.margin>
+                        </ImageView>
+                     </children>
+                  </HBox>
+                  <VBox prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="PHẦN MỀM CHĂM SÓC SỨC KHOẺ JAGO">
+                           <font>
+                              <Font name="Segoe UI Bold Italic" size="28.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="30.0" top="30.0" />
+                           </VBox.margin>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Dõi theo sức khoẻ của bạn từng ngày là niềm vui của chúng tôi">
+                           <font>
+                              <Font name="Segoe UI Italic" size="17.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="80.0" />
+                           </VBox.margin>
+                        </Text>
+                     </children>
+                  </VBox>
+               </children></HBox>
+            <HBox prefHeight="97.0" prefWidth="172.0">
+               <children>
+                  <fx:include source="FXML_TitleBar.fxml" />
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+      <ImageView fitHeight="309.0" fitWidth="837.0" layoutY="152.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/Hospital-Management-System-1.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="394.0" fitWidth="345.0" layoutX="808.0" layoutY="254.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/Doctor.jpg" />
+         </image>
+      </ImageView>
+      <HBox layoutX="474.0" layoutY="525.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity">
+         <children>
+            <JFXButton id="btns" onMouseClicked="#SignIn" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: #29B6F6;" stylesheets="@../CSS/Stylesheet.css" text="ĐĂNG NHẬP" textFill="WHITE">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Segoe UI Bold" size="16.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="GG" size="1.5em" />
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton id="btns" onMouseClicked="#SignUp" prefHeight="40.0" prefWidth="200.0" style="-fx-background-color: #FF5722;" stylesheets="@../CSS/Stylesheet.css" text="ĐĂNG KÝ" textFill="WHITE">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="Segoe UI Bold" size="16.0" />
+               </font>
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="USER_PLUS" size="1.5em" />
+               </graphic>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+         </children>
+      </HBox>
+      <Text fill="WHITE" layoutX="12.0" layoutY="639.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Copyright 2018 by Roller Larry" wrappingWidth="218.783203125">
+         <font>
+            <Font name="Century Gothic" size="14.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="anchorPane" onMouseDragged="#DraggedWindow" onMousePressed="#PressedWindow" prefHeight="650.0" prefWidth="1100.0" style="-fx-background-color: white;" stylesheets="@../CSS/Stylesheet.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="App.Controller.IndexController">
+   <children>
+      <ImageView fitHeight="193.0" fitWidth="933.0" layoutY="457.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/bottom.PNG" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="338.0" fitWidth="742.0" layoutX="407.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/top.PNG" />
+         </image>
+      </ImageView>
+      <HBox prefHeight="116.0" prefWidth="1149.0">
+         <children>
+            <HBox prefHeight="97.0" prefWidth="1152.0">
+               <children>
+                  <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity">
+                     <children>
+                        <ImageView fitHeight="127.0" fitWidth="136.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Images/Health-Sign_icon.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </HBox.margin>
+                        </ImageView>
+                     </children>
+                  </HBox>
+                  <VBox prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="PHẦN MỀM CHĂM SÓC SỨC KHOẺ JAGO">
+                           <font>
+                              <Font name="Segoe UI Bold Italic" size="28.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="30.0" top="30.0" />
+                           </VBox.margin>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Dõi theo sức khoẻ của bạn từng ngày là niềm vui của chúng tôi">
+                           <font>
+                              <Font name="Segoe UI Italic" size="17.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="80.0" />
+                           </VBox.margin>
+                        </Text>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox prefHeight="101.0" prefWidth="92.0">
+               <children>
+                  <fx:include source="FXML_TitleBar.fxml" />
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+      <ImageView fitHeight="305.0" fitWidth="234.0" layoutX="-5.0" layoutY="345.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/young-doctor-transparent.png" />
+         </image>
+      </ImageView>
+      <HBox layoutY="189.0" prefHeight="305.0" prefWidth="1149.0">
+         <children>
+            <VBox alignment="TOP_CENTER" prefHeight="305.0" prefWidth="676.0" style="-fx-background-color: transparent;">
+               <children>
+                  <Label text="DANH SÁCH CHỨC NĂNG">
+                     <font>
+                        <Font name="Segoe UI Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <JFXButton id="btns" prefHeight="40.0" prefWidth="300.0" style="-fx-background-color: #3D5AFE;" stylesheets="@../CSS/Stylesheet.css" text="Chuẩn đoán bệnh" textFill="WHITE">
+                     <font>
+                        <Font name="Segoe UI Bold" size="16.0" />
+                     </font>
+                     <graphic>
+                        <FontAwesomeIconView fill="WHITE" glyphName="HEARTBEAT" size="2em" />
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </JFXButton>
+                  <JFXButton id="btns" prefHeight="40.0" prefWidth="300.0" style="-fx-background-color: #3D5AFE;" stylesheets="@../CSS/Stylesheet.css" text="Danh sách bệnh" textFill="WHITE">
+                     <font>
+                        <Font name="Segoe UI Bold" size="16.0" />
+                     </font>
+                     <graphic>
+                        <FontAwesomeIconView fill="WHITE" glyphName="LIST" size="2em" />
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </JFXButton>
+                  <JFXButton id="btns" prefHeight="40.0" prefWidth="300.0" style="-fx-background-color: #3D5AFE;" stylesheets="@../CSS/Stylesheet.css" text="Tra cứu thuốc" textFill="WHITE">
+                     <font>
+                        <Font name="Segoe UI Bold" size="16.0" />
+                     </font>
+                     <graphic>
+                        <FontAwesomeIconView fill="WHITE" glyphName="CROSSHAIRS" size="2em" />
+                     </graphic>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </JFXButton>
+               </children>
+            </VBox>
+            <VBox prefHeight="305.0" prefWidth="604.0">
+               <children>
+                  <HBox prefHeight="306.0" prefWidth="539.0">
+                     <children>
+                        <VBox prefHeight="233.0" prefWidth="303.0">
+                           <children>
+                              <JFXButton id="btns" prefHeight="110.0" prefWidth="244.0" style="-fx-background-color: #1976D2;" stylesheets="@../CSS/Stylesheet.css" text="ĐẶT CÂU HỎI NHANH" textFill="WHITE">
+                                 <font>
+                                    <Font name="Segoe UI Bold" size="16.0" />
+                                 </font>
+                                 <graphic>
+                                    <FontAwesomeIconView fill="WHITE" glyphName="COMMENTING_ALT" size="2em" />
+                                 </graphic>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                                 <VBox.margin>
+                                    <Insets top="40.0" />
+                                 </VBox.margin>
+                              </JFXButton>
+                              <JFXButton id="btns" prefHeight="110.0" prefWidth="244.0" style="-fx-background-color: #FFCA28;" stylesheets="@../CSS/Stylesheet.css" text="TÌM KIẾM BỆNH VIỆN" textFill="WHITE">
+                                 <font>
+                                    <Font name="Segoe UI Bold" size="16.0" />
+                                 </font>
+                                 <graphic>
+                                    <FontAwesomeIconView fill="WHITE" glyphName="BED" size="2em" />
+                                 </graphic>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                                 <VBox.margin>
+                                    <Insets top="20.0" />
+                                 </VBox.margin>
+                              </JFXButton>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="233.0" prefWidth="303.0">
+                           <children>
+                              <JFXButton id="btns" prefHeight="110.0" prefWidth="244.0" style="-fx-background-color: #FF5722;" stylesheets="@../CSS/Stylesheet.css" text="XEM HỒ SƠ CÁ NHÂN" textFill="WHITE">
+                                 <font>
+                                    <Font name="Segoe UI Bold" size="16.0" />
+                                 </font>
+                                 <graphic>
+                                    <FontAwesomeIconView fill="WHITE" glyphName="USERS" size="2em" />
+                                 </graphic>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                                 <VBox.margin>
+                                    <Insets top="40.0" />
+                                 </VBox.margin>
+                              </JFXButton>
+                              <JFXButton id="btns" prefHeight="110.0" prefWidth="244.0" style="-fx-background-color: #4FC3F7;" stylesheets="@../CSS/Stylesheet.css" text="TÌM KIẾM BÁC SỸ" textFill="WHITE">
+                                 <font>
+                                    <Font name="Segoe UI Bold" size="16.0" />
+                                 </font>
+                                 <graphic>
+                                    <FontAwesomeIconView fill="WHITE" glyphName="USER_MD" size="2em" />
+                                 </graphic>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                                 <VBox.margin>
+                                    <Insets top="20.0" />
+                                 </VBox.margin>
+                              </JFXButton>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <Line endX="500.0" fill="WHITE" layoutX="397.0" layoutY="147.0" startX="-350.0" stroke="#0059ff" />
+      <Label layoutX="980.0" layoutY="139.0" text="Xin chào">
+         <font>
+            <Font name="Segoe UI Bold" size="13.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="64.0" fitWidth="73.0" layoutX="1039.0" layoutY="115.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/large_Comic_Face_Circle_Cropped.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Text layoutX="993.0" layoutY="169.0" strokeType="OUTSIDE" strokeWidth="0.0" text="July Jane">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Text>
+      <Text layoutX="765.0" layoutY="632.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Chú ý : Trong các trường hợp cấp cứu vui lòng liên hệ với cơ sở ý tế." />
+      <FontAwesomeIconView fill="#f58332" glyphName="BULLHORN" layoutX="720.0" layoutY="640.0" size="3em" />
+   </children>
+</AnchorPane>

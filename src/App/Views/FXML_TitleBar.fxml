@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.layout.HBox?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" stylesheets="@../CSS/Stylesheet.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="App.Controller.TitleBarController">
+   <children>
+      <FontAwesomeIconView id="iconsTitlebar" fill="WHITE" glyphName="COGS" onMouseClicked="#OpenSettings" size="2em">
+         <HBox.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </HBox.margin>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </FontAwesomeIconView>
+      <FontAwesomeIconView id="iconsTitlebar" fill="WHITE" glyphName="MINUS" onMouseClicked="#MinWindow" size="2em" text="">
+         <HBox.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </HBox.margin>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </FontAwesomeIconView>
+      <FontAwesomeIconView id="iconsTitlebar" fill="WHITE" glyphName="TIMES" onMouseClicked="#CloseWindow" size="2em">
+         <HBox.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </HBox.margin>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </FontAwesomeIconView>
+   </children>
+</HBox>
