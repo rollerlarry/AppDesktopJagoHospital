@@ -24,7 +24,7 @@ public class SettingsController implements Initializable {
     void Cancel(MouseEvent event) {
         Parent root;
         try {
-            root = FXMLLoader.load(getClass().getClassLoader().getResource("App/Views/FXML_Index.fxml"));
+            root = FXMLLoader.load(getClass().getClassLoader().getResource("App/Views/FXML_Home.fxml"));
             Stage stage = new Stage();
             stage.initStyle(StageStyle.TRANSPARENT);
             stage.setScene(new Scene(root));
@@ -41,7 +41,7 @@ public class SettingsController implements Initializable {
     void SaveChange(MouseEvent event) {
         Parent root;
         try {
-            root = FXMLLoader.load(getClass().getClassLoader().getResource("App/Views/FXML_Index.fxml"));
+            root = FXMLLoader.load(getClass().getClassLoader().getResource("App/Views/FXML_Home.fxml"));
             Stage stage = new Stage();
             stage.initStyle(StageStyle.TRANSPARENT);
             stage.setScene(new Scene(root));

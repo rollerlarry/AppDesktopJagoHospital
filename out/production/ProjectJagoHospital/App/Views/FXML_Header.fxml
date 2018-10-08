@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="root" prefHeight="161.0" prefWidth="1199.0" style="-fx-background-color: #1E88E5;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="App.Controller.HeaderController">
+   <children>
+      <HBox layoutX="32.0" layoutY="42.0" prefHeight="161.0" prefWidth="924.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="173.0" fitWidth="204.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Images/5c0c7f3a062c21ee9bf14f4ecc80a8f8.png" />
+               </image>
+            </ImageView>
+            <VBox prefHeight="161.0" prefWidth="934.0">
+               <children>
+                  <Label prefHeight="34.0" prefWidth="539.0" text="PHẦN MỀM CHĂM SÓC SỨC KHOẺ JAGO" textFill="#686868">
+                     <font>
+                        <Font name="Segoe UI Bold Italic" size="28.0" />
+                     </font>
+                     <padding>
+                        <Insets top="25.0" />
+                     </padding>
+                  </Label>
+                  <Label text="Dõi theo sức khoẻ của bạn từng ngày là niềm vui của chúng tôi" textFill="#686868">
+                     <font>
+                        <Font name="Segoe UI Italic" size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="100.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Line endX="300.0" fill="WHITE" startX="-350.0" stroke="#0059ffaf" strokeMiterLimit="4.0" strokeWidth="2.0" />
+               </children>
+            </VBox>
+            <HBox prefHeight="161.0" prefWidth="202.0">
+               <children>
+                  <VBox prefHeight="161.0" prefWidth="203.0">
+                     <children>
+                        <HBox prefHeight="87.0" prefWidth="201.0">
+                           <children>
+                              <HBox prefHeight="78.0" prefWidth="98.0" />
+                              <FontAwesomeIconView id="iconsTitlebar" fill="#464343" glyphName="COGS" onMouseClicked="#OpenSetting" size="2em">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                                 <HBox.margin>
+                                    <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+                                 </HBox.margin>
+                              </FontAwesomeIconView>
+                              <FontAwesomeIconView id="iconsTitlebar" fill="#464343" glyphName="MINUS" onMouseClicked="#MinWindow" size="2em" text="">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                                 <HBox.margin>
+                                    <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+                                 </HBox.margin>
+                              </FontAwesomeIconView>
+                              <FontAwesomeIconView id="iconsTitlebar" fill="#464343" glyphName="TIMES" onMouseClicked="#CloseWindow" size="2em">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                                 <HBox.margin>
+                                    <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+                                 </HBox.margin>
+                              </FontAwesomeIconView>
+                           </children>
+                        </HBox>
+                        <VBox prefHeight="85.0" prefWidth="171.0">
+                           <children>
+                              <ImageView fitHeight="66.0" fitWidth="69.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Images/jason.jpg" />
+                                 </image>
+                              </ImageView>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Xin chào John">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </VBox>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

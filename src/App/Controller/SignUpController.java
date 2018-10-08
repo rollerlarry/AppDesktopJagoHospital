@@ -1,5 +1,8 @@
 package App.Controller;
 
+import com.jfoenix.controls.JFXDatePicker;
+import com.jfoenix.controls.JFXPasswordField;
+import com.jfoenix.controls.JFXTextField;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
@@ -19,6 +22,22 @@ public class SignUpController implements Initializable {
     public void initialize(URL location, ResourceBundle resources) {
 
     }
+
+    @FXML
+    private JFXTextField txtUsername;
+
+    @FXML
+    private JFXPasswordField txtPassword;
+
+    @FXML
+    private JFXPasswordField txtRePassword;
+
+    @FXML
+    private JFXTextField txtFullName;
+
+    @FXML
+    private JFXDatePicker dpkBirthday;
+
 
     @FXML
     void GoSignIn(MouseEvent event) {
@@ -52,5 +71,18 @@ public class SignUpController implements Initializable {
         catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+    @FXML
+    void SignUp(MouseEvent event) {
+        String userName = txtUsername.getText();
+        String passWord = txtPassword.getText();
+//        String birthDay = dpkBirthday.getValue().toString();
+        String fullName = txtFullName.getText();
+//        User user = new User();
+//        user.SignUp(userName,passWord,birthDay,fullName);
+//
+//        dpkBirthday.
+
     }
 }

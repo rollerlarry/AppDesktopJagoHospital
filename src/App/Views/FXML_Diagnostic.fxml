@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPane" onMouseDragged="#draggedWindow" onMousePressed="#pressedWindow" prefHeight="692.0" prefWidth="1149.0" style="-fx-background-color: white;" stylesheets="@../CSS/Stylesheet.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="App.Controller.DiagnosticController">
+    <children>
+      <StackPane fx:id="stackPane" prefHeight="713.0" prefWidth="1149.0">
+         <children>
+            <VBox prefHeight="692.0" prefWidth="1149.0">
+               <children>
+                 <HBox prefHeight="128.0" prefWidth="1149.0">
+                     <children>
+                         <fx:include source="FXML_Header.fxml" />
+                     </children>
+                 </HBox>
+                  <HBox prefHeight="524.0" prefWidth="1154.0">
+                     <children>
+                        <VBox alignment="TOP_CENTER" prefHeight="517.0" prefWidth="580.0">
+                           <children>
+                              <Label text="DANH SÁCH TRIỆU CHỨNG">
+                                 <font>
+                                    <Font name="Segoe UI Bold" size="20.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label text="( Chọn các triệu chứng bạn gặp phải )">
+                                 <font>
+                                    <Font name="Segoe UI" size="16.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="txtSearchSymptom" onKeyReleased="#searchSymptom" prefHeight="29.0" prefWidth="550.0" promptText="Tìm kiếm triệu chứng">
+                                 <VBox.margin>
+                                    <Insets left="30.0" right="30.0" top="20.0" />
+                                 </VBox.margin>
+                              </TextField>
+                              <VBox prefHeight="394.0" prefWidth="520.0">
+                                 <VBox.margin>
+                                    <Insets left="30.0" right="30.0" top="10.0" />
+                                 </VBox.margin>
+                                 <children>
+                                    <TableView fx:id="tbvSymptom" maxWidth="1.7976931348623157E308" prefHeight="322.0" prefWidth="520.0">
+                                       <columns>
+                                          <TableColumn fx:id="check" prefWidth="36.0" />
+                                          <TableColumn fx:id="symptomName" minWidth="0.0" prefWidth="514.0" text="Tên Triệu Chứng" />
+                                       </columns>
+                                    </TableView>
+                                    <Label text="CÁC TRIỆU CHỨNG ĐÃ CHỌN:">
+                                       <font>
+                                          <Font name="System Bold" size="14.0" />
+                                       </font>
+                                       <VBox.margin>
+                                          <Insets top="10.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <Label fx:id="lblShowSymptom">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="533.0" prefWidth="41.0">
+                           <children>
+                              <JFXButton alignment="CENTER" buttonType="RAISED" onMouseClicked="#diagnosticDiseases" prefHeight="203.0" prefWidth="53.0" ripplerFill="#9697b2" style="-fx-background-color: #03A9F4;" text=" " textFill="WHITE">
+                                 <VBox.margin>
+                                    <Insets top="110.0" />
+                                 </VBox.margin>
+                                 <font>
+                                    <Font name="System Bold" size="1.0" />
+                                 </font>
+                                 <graphic>
+                                    <FontAwesomeIconView fill="WHITE" glyphName="ARROW_RIGHT" size="3em" wrappingWidth="21.285715103149414" />
+                                 </graphic>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </JFXButton>
+                           </children>
+                        </VBox>
+                        <VBox alignment="TOP_CENTER" prefHeight="517.0" prefWidth="530.0">
+                           <children>
+                              <Label text="KẾT QUẢ CHUẨN ĐOÁN">
+                                 <font>
+                                    <Font name="Segoe UI Bold" size="20.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets top="10.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label text="( Bạn có thể mắc phải các bệnh bên dưới )">
+                                 <font>
+                                    <Font name="Segoe UI" size="16.0" />
+                                 </font>
+                              </Label>
+                              <JFXListView fx:id="lvResult" onMouseClicked="#chooseDiseases" prefHeight="361.0" prefWidth="490.0">
+                                 <VBox.margin>
+                                    <Insets left="30.0" right="30.0" top="20.0" />
+                                 </VBox.margin>
+                              </JFXListView>
+                              <VBox prefHeight="39.0" prefWidth="530.0">
+                                 <children>
+                                    <HBox prefHeight="100.0" prefWidth="200.0">
+                                       <children>
+                                          <Label text="SỐ BỆNH TÌM THẤY : ">
+                                             <font>
+                                                <Font name="System Bold" size="14.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="lblCountDiseases">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Label>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets left="30.0" top="10.0" />
+                                 </VBox.margin>
+                              </VBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="29.0" prefWidth="1149.0">
+                     <children>
+                        <fx:include source="FXML_Footer.fxml" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </StackPane>
+    </children>
+</AnchorPane>

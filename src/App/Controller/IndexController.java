@@ -17,6 +17,8 @@ import java.util.ResourceBundle;
 public class IndexController implements Initializable {
     private double x,y;
     private Parent root;
+
+
     @Override
     public void initialize(URL location, ResourceBundle resources) {
 
